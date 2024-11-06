@@ -55,7 +55,7 @@ class Contract:
         self.royalties = royalties
         Contract.all.append(self)
         
-        # Automatically add this contract to both the author's and book's contracts lists
+        
         author.contracts_list.append(self)
         book.contracts_list.append(self)
     
